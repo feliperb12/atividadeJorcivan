@@ -12,9 +12,8 @@
     <title>JavaScript</title>
 </head>
     <body class="body">
-
         <header class="head">
-            <h1>Home</h1>  
+            <h1>JavaScript</h1>  
         <div>      
                 <a  title="Voltar para casa" href="index.html"> <button id="btn">Home</button></a>
                 <a  title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
@@ -24,20 +23,109 @@
                 <a  title="O que é Css?" href="pagina6.html"> <button id="btn">Css</button></a>
                 <a  title="Formulario" href="pagina7.html"> <button id="btn">Formulário</button></a>
                 <a  title="Imagens em CSS" href="pagina8.html"> <button id="btn">Imagens-Css</button></a>
+              
         </div>
         </header>
+         
+    <div class="fundo">
         
-        <div class="pp">
-        <h3>
-           Essa tela foi criada para ser uma tela de descanso, caso o usuário estiver cansado, fique e espere a volta de sua energia!!     
-        </h3> 
+        <div id="fundo" class="colun">
+            <div class="trocar">
+            <h2>JavaScript</h2>
+            <br>
+            <p> JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web
+                — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática —
+                mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D
+                animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido.
+            </p><br>
+            <p>
+                É a terceira camada do
+                bolo das tecnologias padrões da web, as outras camadas são o HTML e o Css</p>
+
+            <p><br>
+                Permite a você criar conteúdo que se atualiza dinamicamente,
+                controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. Ok, não tudo, mas é
+                maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.
+            </p><br>
+            <p>O JavaScript é uma das mais importantes tecnologias voltadas para o front-end e, unindo-se ao trio HTML,
+                CSS e PHP, formam um grupo de linguagens que abrangem praticamente todas as exigências do
+                desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
+                <input id="bt" type="button" value="Tema escuro " onclick="mudarCor()"/>
+                <input id="bt2" type="button" value="Tema claro " onclick="voltarCor()"/>
+            </div>
+            
+               
+            </div>
+        <div class="horario">
+        <div id="MeuHorario" class="meurelogio" onload="hora()"> 
+        </div>
+    <script>
+   hora()
+    </script>
+
+    </div>
+    <div class="ctn">
+        <div class="nome">
+            <h3 align="center">Qual seu nome?</h3>
+            <input id="bt" class="bttt" type="button" value="Me diga" onclick="Alerta()">
+        </div>
+    </div>
     
+    <div class="botoes">
+      <script>data()</script>
         </div>
-        <div id="img">
-        <img title="Imagens retirada: http://www.freepik.com" src="imagens/desc.jpg" alt="some text" ><br>
+    
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botaum2 " onclick="limpar()">C</button></td>
+                    <td><button class="botaum2" onclick="voltar()">
+                            < </td>
+                    <td><button class="botaum2" onclick="inserir('/')">/</button></td>
+                    <td><button class="botaum2" onclick="inserir('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botaum2" onclick="inserir('7')">7</button></td>
+                    <td><button class="botaum2" onclick="inserir('8')">8</button></td>
+                    <td><button class="botaum2" onclick="inserir('9')">9</button></td>
+                    <td><button class="botaum2" onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botaum2" onclick="inserir('4')">4</button></td>
+                    <td><button class="botaum2" onclick="inserir('5')">5</button></td>
+                    <td><button class="botaum2" onclick="inserir('6')">6</button></td>
+                    <td><button class="botaum2" onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botaum2" onclick="inserir('1')">1</button></td>
+                    <td><button class="botaum2" onclick="inserir('2')">2</button></td>
+                    <td><button class="botaum2" onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="botaum2" onclick="calcular()" style="height: 106px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botaum2" onclick="inserir('0')" style="width: 106px;">0</button></td>
+                    <td><button class="botaum2" onclick="inserir('.')">.</button></td>
+                </tr>
+            </table>
         </div>
-        <footer class="footer">
-                <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>
-                </footer>
+
+    </div>
+
+
+    </div>
+    <footer class="footer">
+        <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>
+    </footer>
+    <script>
+        exibir()
+        inserir(num)
+        limpar()
+        voltar()
+        calcular()
+    </script>
+
+
 </body>
 </html>
