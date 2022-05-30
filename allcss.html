@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+  <link rel="shortcut icon" type="imagex/png" href="imagens/seta.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+
+  <header class="head">
+    <h1>Exemplos</h1>  
+<div>      
+        <a  title="Voltar para casa" href="index.html"> <button id="btn">Home</button></a>
+        <a  title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
+        <a  title="Cortes" href="pagina3.html"> <button id="btn">Barbearia</button></a>
+        <a  title="GITHUB" href="pagina4.html"> <button id="btn">Github</button></a>
+        <a  title="IMAGENS" href="pagina5.html"> <button id="btn">Imagens</button></a>
+        <a  title="O que é Css?" href="pagina6.html"> <button id="btn">Css</button></a>
+        <a  title="Formulario" href="pagina7.html"> <button id="btn">Formulário</button></a>
+        <a  title="Imagens em CSS" href="pagina8.html"> <button id="btn">Imagens-Css</button></a>
+</div>
+</header>
+  <div class="titulo">
+    <h2 style="text-align: center; width: 100%;">
+      Arredondando as bordas nas Imagens:
+    </h2>
+  </div>
+  <div class="imagem-bordas">
+    <img src="imagens/cortesmeu.jpeg" id="img">
+  </div>
+  <div class="codigo">
+    <p><b>Para colocar Borda nas imagens usa-se:</b></p>
+    <code>
+            img{
+              <br>
+              border-radius:20px;
+            }
+          </code>
+  </div>
+
+  <h2 style="text-align: center; width: 100%;">
+    Colocando Fundo na imagem, colocando a imagem de fundo repetidas vezes, posicionando a imagem de fundo, colocar se a
+    imagem
+    vai mexer junto com a rolagem do mouse e colocar cor na imagem de fundo:
+  </h2>
+  <div class="testes">
+    <img src="imagens/cortesmeu.jpeg">
+  </div>
+  <div class="codigo">
+    <p><b>O código para essas ações de imagem de fundo são:</b></p>
+    <code>
+        .testes{
+          background-image:url(<br>
+            "/Projeto_html/imagens/seta.png");<br>
+          background-repeat: repeat;<br>
+          background-position: center top;<br>
+          background-attachment: fixed;<br>
+          background-color: purple;<br>
+          text-align: center;
+        }
+          </code>
+  </div>
+
+  <h2 style="text-align: center; width: 100%;">
+    Miniaturas das Imagens:
+  </h2>
+
+  <div class="teste3">
+    <img src="imagens/cortesmeu.jpeg">
+  </div>
+  <div class="codigo">
+    <p><b>Para fazer miniaturas das imagens usa-se:</b></p>
+    <code>
+      .teste3{
+        border: 2px solid #ddd;<br>
+        border-radius: 3px;<br>
+        padding: 100px;<br>
+        width: 450px;<br>
+        background-color: white;<br>
+        text-align: center;<br>
+       
+      }
+          </code>
+  </div>
+
+  <h2 style="text-align: center; width: 100%;">
+    Rotação de imagem:
+  </h2>
+
+  <div class="teste5">
+    <img src="imagens/cortesmeu.jpeg">
+  </div>
+  <div class="codigo">
+    <p><b>Para fazer miniaturas das imagens usa-se:</b></p>
+    <code>
+      .teste5{
+        text-align: center;<br>
+        -webkit-animation-name: keyFrameTeste5;<br>
+      -webkit-animation-timing-function: ease-in-out;<br>
+      -webkit-animation-iteration-count: infinite;<br>
+      -webkit-animation-duration: 5s;<br>
+      -webkit-animation-direction: alternate;<br>
+      }
+      }
+          </code>
+  </div>
+
+
+  </code>
+  <footer class="footer">
+    <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>
+
+  </footer>
+</body>
+
+</html>

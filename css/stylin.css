@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(150, 150, 150);
+   
+}
+li {
+  font-weight: bold;
+  }
+
+ul.square {
+list-style-image: url("http://squids.com.br/icons/box.png");/*Trocou a bolinha por uma caixa*/
+border: thick  groove  rgb(0,0,0);/*Fez uma borda na lista*/
+	}
+
+p.borda{
+width: 500px;/*Comprimento da frase*/
+border: 3px solid black;/*Colocar borda preta*/
+font-size: 20px;/*Tamanho a fonte*/
+font-family: "Open Sans", sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
+text-align: center;/*Texto centralizar*/
+letter-spacing: 4px;/*Espaçamento entra as palavras*/
+line-height: 4; /*Altura da linha*/
+text-shadow: 3px 3px 1px white;/*Aqui mostra uma sobra na frase*/
+background-position: 0 100%;/*Imagens de fundo*/
+background-image: linear-gradient(to bottom, transparent 0%, #3822fa 23%);/*Cor de fundo*/
+}
+
+button.btnbotao{
+background-color: var(black);
+background: #0066A2;
+color: white;
+border-style: outset;/*Estilo da borda*/
+border-color: #0066A2;
+height: 50px;/*Altura da borda*/
+width: 100px;
+font: bold 15px arial, sans-serif;/*Fonte do botão*/
+ 
+}
+.menor{
+  height: 50px;/*Altura da borda*/
+  width: 100px;
+  border-radius: 3em;
+  border-color: #2ecc71;
+  color: #2ecc71;
+  background-image: -webkit-linear-gradient(top, transparent 50%, #2ecc71 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #2ecc71 50%);
+  background-position: 0% 0%;
+  background-size: 210%;
+  -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  font: bold 15px arial, sans-serif;/*Fonte do botão*/
+
+}
+.menor:hover {
+  color: #fff;
+  background-position: 0 100%;
+}
+
+.codigo{
+  color: black;
+  font-weight: bold; /*Escrever em negrito*/
+}
+
+.text{
+  width: 700px;/*Comprimento da frase*/
+border: 2px solid black;/*Colocar borda preta*/
+}
+
+.color{
+  color: yellow;
+}
+
+/*Pagina 7*/
+.formulario{
+  width: 500px;
+  padding: 40px;
+  margin:auto;
+  border:1px solid rgb(255, 0, 0);
+}
+.formulario p{
+  width: 100%;
+  font-size: 1.5em;
+}
+.field{
+  width: 100%;
+  margin: 15px 0;
+}
+.field label, 
+.field span{
+  padding-left: 10px;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+.radiobox label{
+  width: auto;
+  display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+input#nao{
+  margin-left: 30px;
+}
+textarea{
+  line-height: 20px;
+  padding: 10px;
+  height: 90px;
+  resize: none;
+}
+input[type=submit]{
+  display: block;
+  background-color: red;
+  height: 35px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+.interesse{
+
+background-color: rgb(150, 215, 255);
+border-image: url("./132d0b11f96dcffaa700966900312a52.jpg") 10 round;
+border: 10px outset blue;
+border-radius: 20px;
+box-shadow: 10px 10px grey;
+width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: auto;
+}
+.espaco{
+  padding: 0.4cm;
+}
+
+.fieldxd label{
+  padding-left: 10px;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+input[type=password]
+{
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}

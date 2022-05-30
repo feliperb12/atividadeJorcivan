@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/seta.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylin.css">
+</head>
+
+<body class="body">
+   
+    <header class="head">
+        <h1>Css</h1>  
+    <div>      
+            <a  title="Voltar para casa" href="index.html"> <button id="btn">Home</button></a>
+            <a  title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
+            <a  title="Cortes" href="pagina3.html"> <button id="btn">Barbearia</button></a>
+            <a  title="GITHUB" href="pagina4.html"> <button id="btn">Github</button></a>
+            <a  title="IMAGENS" href="pagina5.html"> <button id="btn">Imagens</button></a>
+            <a  title="Formulario" href="pagina7.html"> <button id="btn">Formulário</button></a>
+            <a  title="Imagens em CSS" href="pagina8.html"> <button id="btn">Imagens-Css</button></a>
+    </div>
+    </header>
+    <h1>Definição de Css:</h1>
+<div class="palavras">
+    <div class="container">
+        <div class="row">
+            <p align="justify">
+                Cascading Style Sheets (CSS) é uma linguagem de design feita para simplificar a apresentação e
+                customização de páginas na internet (HTML).
+
+                Se você já sabe o que é HTML, entendeu que ele é o esqueleto de todas as páginas na internet, podemos
+                pensar no CSS como a pele ou até mesmo a roupa, ele é responsável por aplicar todas as customizações
+                visuais como, tamanho e cor da fonte, cor de fundo, e muito mais. As regras presentes para customização
+                são definidas em cascada, hierarquicamente, para cada tag e tags filhas. Por exemplo:
+            </p>
+            <center>
+                <img title="Imagem dos Deuses" src="imagens/exemplo.png" alt="some text"
+                    style="width: 600px; height: 150px;">
+            </center>
+            <p align="justify">A primeira regra acima aplica uma customização na página, deixando sua cor de fundo
+                preta, a cor do texto branco no tamanho de 10px, já na segunda informamos que todas as tags do tipo h1
+                dentro da tag body terão a cor da fonte em vermelho.</p>
+
+            <h1>Sintaxe do CSS</h1>
+            <p align="justify">Existe regras pré-definidas para aplicar as regras em seu documento HTML, elas são
+                separadas por seletor e declaração.</p>
+
+
+            <code>
+    .add-red-color { color: red; }
+  </code><br>
+
+            <p align="justify">Um seletor é um conjunto de propriedade (também pré-definida) e valores. Os seletores
+                podem se aplicar ao seguinte:
+            <ul class="square">
+                <ul>
+                    <li>
+                        Em todos os elementos de um tipo específico por sua tag, por exemplo, h1.</li>
+                    <li>Elementos especificados por algum atributo, em particular:</li>
+                    <li>id: Um identificador único dentro do documento(
+                        <code>&lt;h1 class="<strong>classe</strong>"&gt;&lt;/h1&gt;</code>)<br>
+                    </li>
+                    <li> Um identificador que pode existir em vários
+                        elementos(<code>&lt;h1 class="<strong>classe</strong>"&gt;&lt;/h1&gt;</code>)
+                    </li>
+                </ul>
+            </ul>
+
+            Os seletores por classe e id diferenciam maiúsculas de minúsculas, devem começar com letras e podem
+            incluir caracteres alfanuméricos, hifens e sublinhados. Uma classe pode ser aplicada a qualquer número
+            de instâncias de qualquer elemento. Um ID pode ser aplicado apenas a um único elemento.
+
+
+            Existem também as pseudo-classes, elas são usadas nos seletores CSS para permitir a formatação com base em
+            informações ou interações que não estão explicitamente contidas no HTML. Um exemplo de uma pseudo-classe
+            muito usada é a que identifica o conteúdo somente quando o usuário passa o mouse em cima do elemento,
+            normalmente essa classe é utilizada para informar e mudar a cor, por exemplo, um link. As pseudo classes são
+            separadas e identificadas por : ou ::. </p>
+            <div>
+                <h1>Como usar o CSS</h1>
+                <p>Existem duas maneiras de usar o CSS dentro do seu arquivo HTML.
+
+                    Você pode utilizar as regras diretamente nas tags HTML:
+                <pre><code>&lt;h1 style="color:red"&gt;Texto com a cor Vermelha&lt;/h1&gt;</code></pre>
+                <h1 style="color: red;"> Texto com a Cor Vermelha </h1>
+                Você pode criar uma tag de estilo
+                <pre><code>no seu documento e centralizar todas as regras:
+
+<b>&lt;style&gt;
+h1 {
+    color: red;
+}
+&lt;style&gt;</b>
+</code></pre>
+                Você pode adicionar um arquivo CSS externo:
+                <pre><code>
+<b>&lt;link href="caminho/para/arquivo.css" rel="stylesheet" type="text/css"&gt;</b>
+</code>
+</pre>
+
+                Onde o arquivo conteria todas as regras CSS centralizadas:
+
+                h1 {
+                color: red;
+                }
+                </pre>
+            </div>
+
+            <p class="borda">Aqui vai ter uma borda</p>
+            <br>
+            <button class="btnbotao">Aqui tem um botão</button>
+            <button class="menor">Clique</button>
+
+            <h1 style="color: aliceblue;">Código usado para fazer essa borda, os dois botões e a lista</h1>
+
+            <div class="text">
+                <code class="codigo"><pre>
+    
+    li {
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+
+code {
+color: red;
+}
+
+
+ul.square {
+list-style-image: url("http://squids.com.br/icons/box.png");<p class="color">/*Trocou a bolinha por uma caixa*/</p>
+border: thick  groove  rgb(0,0,0);<p class="color">/*Fez uma borda na lista*/</p>
+	}
+
+p.borda{
+width: 500px;<p class="color">/*Comprimento da frase*/</p>
+border: 3px solid black;<p class="color">/*Colocar borda preta*/</p>
+font-size: 20px;<p class="color">/*Tamanho a fonte*/</p>
+font-family: "Open Sans", sans-serif; <p class="color">/* este deve ser o nome da fonte que você obteve no Google Fonts */</p>
+text-align: center;<p class="color">/*Texto centralizar*/</p>
+letter-spacing: 4px;<p class="color">/*Espaçamento entra as palavras*/</p>
+line-height: 4; <p class="color">/*Altura da linha*/</p>
+text-shadow: 3px 3px 1px white;<p class="color">/*Aqui mostra uma sobra na frase*/</p>
+background-position: 0 100%;<p class="color">/*Imagens de fundo*/</p>
+background-image: linear-gradient(to bottom, transparent 0%, #3822fa 23%);<p class="color">/*Cor de fundo*/</p>
+}
+
+button.btnbotao{
+background-color: var(black);
+background: #0066A2;
+color: white;
+border-style: outset;<p class="color">/*Estilo da borda*/</p>
+border-color: #0066A2;
+height: 50px;<p class="color">/*Altura da borda*/</p>
+width: 100px;
+font: bold 15px arial, sans-serif;<p class="color">/*Fonte do botão*/</p>
+ 
+}
+.menor{
+  height: 50px;<p class="color">/*Altura da borda*/</p>
+  width: 100px;
+  border-radius: 3em;
+  border-color: #2ecc71;
+  color: #2ecc71;
+  background-image: -webkit-linear-gradient(top, transparent 50%, #2ecc71 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #2ecc71 50%);
+  background-position: 0% 0%;
+  background-size: 210%;
+  -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+  font: bold 15px arial, sans-serif;<p class="color">/*Fonte do botão*/</p>
+
+}
+.menor:hover {
+  color: #fff;
+  background-position: 0 100%;
+}
+
+.codigo{
+  color: black;
+  font-weight: bold;<p class="color"> /*Escrever em negrito*/</p>
+}
+
+</pre></code>
+            </div>
+            <br>
+          
+        </div>
+    </div>
+</div>
+<footer class="footer">
+   
+        <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>
+  
+</body>
+</html>
