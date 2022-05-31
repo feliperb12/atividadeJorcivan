@@ -285,11 +285,11 @@ input[type=password] {
 }
 
 .testes {
-  background-image: url("/imagens/seta.png");
+  background-image: url("https://c.tenor.com/9RCIDZjkhBsAAAAM/hamster-meme.gif");
   background-repeat: repeat;
   background-position: center top;
   background-attachment: fixed;
-  background-color: purple;
+  background-color: #008020;
   text-align: center;
 }
 
