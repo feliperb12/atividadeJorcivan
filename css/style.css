@@ -25,9 +25,7 @@
 }
 
 .body {
-  min-height: 100vh;
-  flex: 1 0 auto;
-  display: block;
+
 
 
 }
@@ -37,7 +35,7 @@
   bottom: 0;
   position: absolute;
   padding: 3px;
-  width: 100%;
+  width: 70%;
   background-color: rgba(108, 245, 138, 0.751);
   color: black;
   height: 100px;
