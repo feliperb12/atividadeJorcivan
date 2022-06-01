@@ -6,7 +6,7 @@
 }
 
 * {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0;
   padding: 0;
 }
@@ -24,18 +24,14 @@
 
 }
 
-.body {
 
-
-
-}
 
 .rodape {
   display: block;
   bottom: 0;
   position: absolute;
   padding: 3px;
-  width: 70%;
+  width: 100%;
   background-color: rgba(108, 245, 138, 0.751);
   color: black;
   height: 100px;
@@ -433,7 +429,7 @@ input[type=password] {
   background-image: -webkit-linear-gradient(45deg, rgb(124, 226, 138) 50%, transparent 50%);
   background-image: linear-gradient(45deg, rgb(124, 226, 138) 48%, transparent 50%);
   background-position: 100%;
-  background-size: 400%;
+  background-size: 500%;
   -webkit-transition: background 500ms ease-in-out;
   transition: background 200ms ease-in-out;
 }
@@ -489,9 +485,6 @@ input[type=password] {
 
 .horario {
   position: relative;
-  top: 0%;
-  left: 32%;
-  transform: translate(-20%, -99%);
   border-radius: 15px;
   padding: 5px;
   text-align: center;
