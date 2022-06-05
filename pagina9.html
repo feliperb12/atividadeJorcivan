@@ -15,7 +15,10 @@
 <body class="body">
     <header class="head">
         <h1>JavaScript</h1>
-        <div>
+   
+    <div class="buscar">
+        <a href="#" class="">Atividades</a>
+        <div id="menu">
             <a title="Voltar para casa" href="index.html"> <button id="btn">Home</button></a>
             <a title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
             <a title="Cortes" href="pagina3.html"> <button id="btn">Barbearia</button></a>
@@ -26,6 +29,30 @@
             <a title="Imagens em CSS" href="pagina8.html"> <button id="btn">Imagens-Css</button></a>
 
         </div>
+
+        <!-- Bar icon for navigation -->
+        <a href="javascript:void(0);" class="sinal" 
+                onclick="clicando()">
+
+            <i onclick="f2(this)" 
+                    class="fa fa-plus-circle">
+            </i>
+        </a>
+    </div>
+   
+  
+<script>
+
+    // Function to toggle the bar
+    function clicando() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
     </header>
 
     <div class="fundo">
@@ -39,7 +66,7 @@
                     web
                     — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática —
                     mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D
-                    animados, etc. — você pode apostar que o JavaScript provavelmente está envolvido.
+                    animados e etc. Você pode apostar que o JavaScript provavelmente está envolvido.
                 </p><br>
                 <p>
                     É a terceira camada do
@@ -72,12 +99,11 @@
             </script>
         </div>
 
-        <div id="fundo" class="ctn">
-            <div id="fundo" class="nome">
-                <h3 align="center">Qual seu nome?</h3>
-                <input id="bt" class="bttt" type="button" value="Me diga" onclick="Alerta()">
-            </div>
-        </div>
+   
+        <p id="demo">Clique para mudar o texto</p>
+        <input id="bt" type="button" value="Me diga seu nome" onclick="Alerta()">
+        <button id="bt" type="button" onclick='document.getElementById("demo").innerHTML = "Mudou o texto"'>Clica
+            aqui para mudar o texto</button>
     </div>
     <script>
         exibir()

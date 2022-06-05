@@ -94,3 +94,4 @@ function voltarCor() {
     bat2.style.visibility = 'hidden';
     bat.style.visibility = 'visible';
 }
+

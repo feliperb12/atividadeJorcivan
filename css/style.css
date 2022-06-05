@@ -445,14 +445,12 @@ input[type=password] {
 }
 
 .colun {
-  padding: 5px;
+  padding: 2px;
   background-color: #ffefd5;
   border-radius: 15px;
   color: black;
   border: 4px solid black;
-  text-align: left;
   text-align: justify;
-  width: 400px;
   font-weight: bold;
 }
 
@@ -462,37 +460,26 @@ input[type=password] {
   color: rgb(0, 0, 0);
   text-align: left;
   cursor: pointer;
-  height: 100vh;
-  flex-direction: column;
-  width: 240px;
-  height: 50px;
-  line-height: 50px;
+  line-height: 25px;
   font-weight: bold;
   border-radius: 10px;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
-  top: 0%;
-  left: 0%;
 }
 
 .horario {
-  position: relative;
   border-radius: 15px;
-  padding: 5px;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   background-color: #ffefd5;
   border: 3px solid #000000;
   color: rgb(0, 0, 0);
-  height: 40px;
-  line-height: 40px;
+  line-height: 25px;
   border-radius: 10px;
   font-size: 17px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100px;
-
 }
 
 #bt {
@@ -502,13 +489,12 @@ input[type=password] {
   color: rgb(0, 0, 0);
   text-shadow: 0px 1px 0px #7c7b7b;
   border-radius: 4px;
-  display: inline-block;
   cursor: pointer;
   font-family: Verdana;
   font-weight: bold;
   font-size: 13px;
   padding: 6px 10px;
-  text-decoration: none;
+
 }
 
 #bt:hover {
@@ -539,72 +525,19 @@ input[type=password] {
 }
 
 .nome {
-  padding: 5px;
   background-color: #ffefd5;
   border-radius: 15px;
   color: black;
   border: 4px solid black;
   text-align: center;
   text-align: justify;
-  width: 400px;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-
 }
 
 .bttt {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-nav {
-  background-color: #000000;
-  padding: 0 20px;
-  color: white;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav,
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-
-}
-
-li {
-  padding: 0 20px;
-
-}
-
-li:hover,
-.ddt:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.ddt {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: none;
-}
-
-.ddt:focus ~ ul{
-  display: flex;
-  height: 125px;
 }
 
 @media (max-width:700px) {
@@ -614,41 +547,51 @@ li:hover,
   width: 100%;
   padding: 0;
 }
+ 
+}
 
-  nav,
-  ul {
-    flex-direction: column;
 
-  }
-
-  ul {
-    text-align: center;
-    margin: 0;
-    height: 0;
-    display: none;
   
-  }
+    
+      
+      /* logo, navigation menu styling */
+      .buscar {
+          overflow: hidden;
+          background-color: #111;
+          position: relative;
+          top:0;
+          left: 0;
+          width: 20%;
+      }
+      
+      /* stylinf navigation menu */
+      .buscar #menu {
+          display: none;
+      }
+      
+      /* link specifi styling */
+      .buscar a {
+          text-decoration: none;
+          color: white;
+          padding: 14px 16px;
+          font-size: 16px;
+          display: block;
+      }
+      
+      /* navigation toggle menu styling */
+      .buscar a.sinal {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+   
+      
+      /* hover effect on navigation logo and menu */
+      .buscar a:hover {
+          background-color: #ddd;
+          color: black;
+      }
 
-  nav {
-    padding: 0;
-    align-items: flex-start;
-    width: 100%;
-  }
 
-  .ddt {
-    display: flex;
-  }
 
-  li,
-  ul {
-    width: 100%;
-  }
-
-  li {
-    padding: 10px;
-  }
-.logo{
-  margin-top: 10px;
-  margin-left: 10px;
-}
-}

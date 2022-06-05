@@ -14,7 +14,10 @@
 
     <header class="head">
         <h1>Imagens-Css</h1>  
-    <div>      
+
+    <div class="buscar">
+        <a href="#" class="">Atividades</a>
+        <div id="menu">
             <a  title="Voltar para casa" href="index.html"> <button id="btn">Home</button></a>
             <a  title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
             <a  title="Cortes" href="pagina3.html"> <button id="btn">Barbearia</button></a>
@@ -24,7 +27,31 @@
             <a  title="Formulario" href="pagina7.html"> <button id="btn">Formulário</button></a>
             <a  title="JavaScript" href="pagina9.html"> <button id="btn">JavaScript</button></a>
 
+        </div>
+
+        <!-- Bar icon for navigation -->
+        <a href="javascript:void(0);" class="sinal" 
+                onclick="clicando()">
+
+            <i onclick="f2(this)" 
+                    class="fa fa-plus-circle">
+            </i>
+        </a>
     </div>
+   
+  
+<script>
+
+    // Function to toggle the bar
+    function clicando() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
     </header>
     <h1 class="arial">
         Trabalhando com imagens CSS
