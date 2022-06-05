@@ -1,12 +1,6 @@
-@media screen and (max-width: 700px) {
-  * {
-    float: none;
-    margin-right: 0;
-  }
-}
 
 * {
-  max-width: 2000px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -391,8 +385,7 @@ input[type=password] {
   line-height: 80px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+ 
 }
 
 .fundo {
@@ -499,7 +492,7 @@ input[type=password] {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   width: 100px;
-  
+
 }
 
 #bt {
@@ -564,4 +557,98 @@ input[type=password] {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+nav {
+  background-color: #000000;
+  padding: 0 20px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+li {
+  padding: 0 20px;
+
+}
+
+li:hover,
+.ddt:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ddt {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+.ddt:focus ~ ul{
+  display: flex;
+  height: 125px;
+}
+
+@media (max-width:700px) {
+#fundo{
+  flex-direction: unset;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+  nav,
+  ul {
+    flex-direction: column;
+
+  }
+
+  ul {
+    text-align: center;
+    margin: 0;
+    height: 0;
+    display: none;
+  
+  }
+
+  nav {
+    padding: 0;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .ddt {
+    display: flex;
+  }
+
+  li,
+  ul {
+    width: 100%;
+  }
+
+  li {
+    padding: 10px;
+  }
+.logo{
+  margin-top: 10px;
+  margin-left: 10px;
+}
 }
