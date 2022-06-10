@@ -1,0 +1,664 @@
+:root {
+    --menu-size: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(21, 22, 29);
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#btnMenu:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(41, 57, 98);
+}
+
+#btnMenu:active {
+    background-color: rgb(3, 4, 7);
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 700px) {
+    #btnClose {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+.head {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(10deg, rgb(17, 16, 16), #68dd5e);
+    overflow: hidden;
+    padding: 2px 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+  
+  }
+  
+  
+  
+  .rodape {
+    display: block;
+    bottom: 0;
+    position: absolute;
+    padding: 3px;
+    width: 100%;
+    background-color: rgba(108, 245, 138, 0.751);
+    color: black;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  #btn {
+    border-radius: 10px;
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    font-variant: small-caps;
+    width: 100px;
+    padding: flex;
+  
+  
+  }
+  
+  #btn:hover {
+    background: #bbb2b2;
+  }
+  
+  .body {
+    background-color: rgb(184, 184, 189);
+  }
+  
+  img {
+    border-radius: 50px;
+    padding-top: 10px;
+    width: 400px;
+    height: 400px;
+    padding-bottom: 20px;
+  
+  }
+  
+  #img {
+    text-align: center;
+    position: relative;
+  
+  }
+  
+  #img:hover {
+    text-align: center;
+  
+  }
+  
+  .pp {
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+  }
+  
+  .suplementos {
+    text-align: center;
+  }
+  
+  #clique {
+    width: 30%;
+    margin: auto;
+    float: inline-end;
+    font-family: Georgia;
+  
+  }
+  
+  #clique ul li {
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+  }
+  
+  #clique a:link {
+    background: #F5F5F5;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+  }
+  
+  #clique a:hover {
+    background: #E5F0FF;
+    color: #039;
+  }
+  
+  .botao {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: #0987D2;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+    font-family: 'open_sansregular';
+  }
+  
+  .flutuante {
+    display: inline-block;
+    box-shadow: 0px 4px 2px 0px rgba(98, 98, 98, 0.69);
+  }
+  
+  .flutuante:hover {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.69);
+  }
+  
+  .palavras {
+    font-family: Georgia;
+    text-align: justify;
+    font-size: 16px;
+  }
+  
+  .formulario {
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    border: 1px solid rgb(60, 235, 74);
+  }
+  
+  .formulario p {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  
+  .field {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .field label,
+  .field span {
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+  }
+  
+  .radiobox label {
+    width: auto;
+    display: inline-block;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  input#nao {
+    margin-left: 30px;
+  }
+  
+  textarea {
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+  }
+  
+  input[type=submit] {
+    display: block;
+    background-color: rgb(124, 226, 138);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+  
+  }
+  
+  .interesse {
+  
+    background-color: rgb(150, 215, 255);
+    border-image: url("./132d0b11f96dcffaa700966900312a52.jpg") 10 round;
+    border: 10px outset blue;
+    border-radius: 20px;
+    box-shadow: 10px 10px grey;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: auto;
+  }
+  
+  .espaco {
+    padding: 0.4cm;
+  }
+  
+  .fieldxd label {
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=password] {
+    width: 100%;
+    padding-left: 5px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .botaum {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-color: rgb(124, 226, 138);
+    background-image: -webkit-linear-gradient(45deg, rgb(124, 226, 138) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgb(124, 226, 138) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 500ms ease-in-out;
+    transition: background 200ms ease-in-out;
+    border-radius: 20px;
+  
+  
+  }
+  
+  .botaum:hover {
+    background-position: 0;
+  }
+  
+  .botao2 {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 200px;
+  }
+  
+  .arial {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .codigo {
+    padding: 4px;
+    font-weight: bold;
+  }
+  
+  .codigo code {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .imagem-bordas {
+    text-align: center;
+  }
+  
+  .testes {
+    background-image: url("https://c.tenor.com/9RCIDZjkhBsAAAAM/hamster-meme.gif");
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-color: #008020;
+    text-align: center;
+  }
+  
+  .teste3 {
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    padding: 100px;
+    width: 450px;
+    background-color: white;
+    text-align: center;
+  
+  }
+  
+  @keyframes keyFrameTeste5 {
+    0% {
+      opacity: 1;
+    }
+  
+    10% {
+      opacity: .9;
+    }
+  
+    20% {
+      opacity: .8;
+    }
+  
+    30% {
+      opacity: .7;
+    }
+  
+    40% {
+      opacity: .6;
+    }
+  
+    50% {
+      opacity: .5;
+    }
+  
+    60% {
+      opacity: .4;
+    }
+  
+    70% {
+      opacity: .3;
+    }
+  
+    80% {
+      opacity: .2;
+    }
+  
+    90% {
+      opacity: .1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .teste5 {
+    text-align: center;
+    -webkit-animation-name: keyFrameTeste5;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+  }
+  
+  .codigo p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .menu-list {
+    max-width: 300px;
+    margin: auto;
+    height: 500px;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+  }
+  
+  .cabeça {
+    background-image: linear-gradient(70deg, black, #68675f);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .footer {
+    background-image: linear-gradient(10deg, rgb(17, 16, 16), #68dd5e);
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .fundo {
+    background-image: linear-gradient(80deg, rgb(17, 16, 16), #90ca8b);
+    height: 100vmax;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  
+  }
+  
+  
+  .calculadora {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .botaum2 {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    margin: 3px;
+    border-color: rgb(124, 226, 138);
+    background-image: -webkit-linear-gradient(45deg, rgb(124, 226, 138) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgb(124, 226, 138) 48%, transparent 50%);
+    background-position: 100%;
+    background-size: 500%;
+    -webkit-transition: background 500ms ease-in-out;
+    transition: background 200ms ease-in-out;
+  }
+  
+  .botaum2:hover {
+    background-color: black;
+    background-position: 0;
+  }
+  
+  #resultado {
+    width: 207px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+  
+  }
+  
+  .colun {
+    padding: 2px;
+    background-color: #ffefd5;
+    border-radius: 15px;
+    color: black;
+    border: 4px solid black;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  .botoes {
+    background-color: #ffefd5;
+    border: 3px solid #000000;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    cursor: pointer;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .horario {
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #ffefd5;
+    border: 3px solid #000000;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #bt {
+    border-color: #4169e1;
+    background: linear-gradient(to bottom, #86c6f8 5%, #4169e1 100%);
+    box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 1px 0px #7c7b7b;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+  
+  }
+  
+  #bt:hover {
+    background: linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+  }
+  
+  #bt2 {
+    border-color: #4169e1;
+  
+    background: linear-gradient(to bottom, #86c6f8 5%, #4169e1 100%);
+    box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 1px 0px #7c7b7b;
+    border-radius: 4px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-decoration: none;
+    visibility: hidden;
+  }
+  
+  #bt2:hover {
+    background: linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+  }
+  
+  .nome {
+    background-color: #ffefd5;
+    border-radius: 15px;
+    color: black;
+    border: 4px solid black;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  .bttt {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width:700px) {
+    #fundo {
+      flex-direction: unset;
+      display: flex;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .buscar a.sinal {
+      display: none;
+      width: 70%;
+      align-items: center;
+  
+    }
+  
+    .buscar a.ativ {
+      visibility: hidden;
+  
+    }
+  
+  }
+  
+  
+  
