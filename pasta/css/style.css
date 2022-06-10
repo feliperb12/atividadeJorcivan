@@ -38,10 +38,12 @@ header {
     border-radius: 50%;
     cursor: pointer;
     background-color: rgb(41, 57, 98);
+
 }
 
 #btnMenu:active {
     background-color: rgb(3, 4, 7);
+
 }
 
 #btnClose {
@@ -62,6 +64,7 @@ header {
     width: var(--menu-size);
     height: 100%;
     background-color: rgb(40, 42, 54);
+  
 }
 
 .menu ul {
@@ -84,6 +87,7 @@ header {
 
 .menu ul li a:hover {
     background-color: rgb(49, 54, 85);
+  
 }
 
 .effect {
@@ -364,10 +368,11 @@ header {
   .codigo {
     padding: 4px;
     font-weight: bold;
+    border: 5px solid rgb(0, 0, 0);
   }
   
   .codigo code {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, c-serif;
   }
   
   .imagem-bordas {
@@ -386,11 +391,11 @@ header {
   .teste3 {
     border: 2px solid #ddd;
     border-radius: 3px;
-    padding: 100px;
+    padding: 10px;
     width: 450px;
     background-color: white;
-    text-align: center;
-  
+    text-align: left;
+    
   }
   
   @keyframes keyFrameTeste5 {
