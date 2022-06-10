@@ -5,83 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-    <link rel="shortcut icon" type="imagex/png" href="imagens/seta.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <title>Menu animado - SatellaSoft</title>
+
+    <link rel="preload" href="pasta/css/style.css" as="style">
+    <link rel="preload" href="pasta/js/script.js" as="script">
+    <link rel="stylesheet" href="pasta/css/style.css">
 </head>
 
-<body class="body">
-    <header class="head">
-        <h1>Home</h1>
-        <div>
-           <!-- <a title="Suplementos" href="pagina2.html"> <button id="btn">Academia</button></a>
-            <a title="Cortes" href="pagina3.html"> <button id="btn">Barbearia</button></a>
-            <a title="GITHUB" href="pagina4.html"> <button id="btn">Github</button></a>
-            <a title="IMAGENS" href="pagina5.html"> <button id="btn">Imagens</button></a>
-            <a title="O que é Css?" href="pagina6.html"> <button id="btn">Css</button></a>
-            <a title="Formulario" href="pagina7.html"> <button id="btn">Formulário</button></a>
-            <a title="Imagens em CSS" href="pagina8.html"> <button id="btn">Imagens-Css</button></a>
-            <a title="JavaScript" href="pagina9.html"> <button id="btn">JavaScript</button></a>
-        </div>-->   
-            <!-- Logo and navigation menu -->
-            <div class="buscar">
-                <a class="ativ">Atividades</a>
-                <div id="menu">
-                    <a title="Cortes" href="pagina3.html"> Barbearia</button></a>
-                    <a title="GITHUB" href="pagina4.html"> Github</button></a>
-                    <a title="IMAGENS" href="pagina5.html"> Imagens</button></a>
-                    <a title="O que é Css?" href="pagina6.html"> Css</button></a>
-                    <a title="Formulario" href="pagina7.html"> Formulário</button></a>
-                    <a title="Imagens em CSS" href="pagina8.html"> Imagens-Css</button></a>
-                    <a title="JavaScript" href="pagina9.html"> JavaScript</button></a>
-      
-                </div>
-      
-                <!-- Bar icon for navigation -->
-                <a href="javascript:void(0);" class="sinal" 
-                        onclick="clicando()">
-      
-                    <i onclick="f2(this)" 
-                            class="fa fa-plus-circle">
-                    </i>
-                </a>
-            </div>
-           
-          
-        <script>
-        
-            // Function to toggle the bar
-            function clicando() {
-                var x = document.getElementById("menu");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
-    
-           
+<body>
 
-   
+    <header>
+        <img src="pasta/img/menu1.svg" alt="Clique para abrir ou fechar o menu" id="btnMenu">
     </header>
-    
-    <div class="pp">
+
+    <div id="menu" class="menu effect">
+        <nav>
+            <div style="text-align: right;">
+                <button id="btnClose">X</button>
+            </div>
+            <ul>
+                <li><a title="JavaScript" href="pagina9.html"> JavaScript</button></a></li>
+                <li><a title="Cortes" href="pagina3.html"> Barbearia</button></a></li>
+                <li><a title="GITHUB" href="pagina4.html"> Github</button></a></li>
+                <li><a title="IMAGENS" href="pagina5.html"> Imagens</button></a></li>
+                <li><a title="O que é Css?" href="pagina6.html"> Css</button></a></li>
+                <li><a title="Formulario" href="pagina7.html"> Formulário</button></a></li>
+                <li><a title="Imagens em CSS" href="pagina8.html"> Imagens-Css</button></a></li>
+
+              
+        </nav>
+    </div>
+    <div class="content">
         <h3>
             Essa tela foi criada para ser uma tela de descanso, caso o usuário estiver cansado, fique e espere a volta
             de sua energia!!
         </h3>
 
     </div>
-    <div id="img">
-        <img title="Imagens retirada: http://www.freepik.com" src="imagens/desc.jpg" alt="some text"><br>
-    </div>
+    <div class="centralizar">
+        <img class="img" title="Imagens retirada: http://www.freepik.com" src="pasta/img/desc.jpg" alt="some text"><br></div>
     <footer class="footer">
         <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>
     </footer>
+    <script src="pasta/js/script.js"></script>
 </body>
 
 </html>
