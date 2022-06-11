@@ -1,23 +1,36 @@
 
+'use strict'
 const menuSize = '250px';
-let open = true;
+let abrir = false;
+
+
 document.querySelector('#btnMenu').addEventListener('click', e => {
-    open = !open;
-    toggleMenu();
+    
+    abrir = !abrir;
+    AlterarMenu();
+    aparecer();
 })
 
 document.querySelector('#btnClose').addEventListener('click', e => {
-    open = false;
-
-    toggleMenu();
+    abrir = false;
+    
+    AlterarMenu();
 })
+function aparecer(){
+    var texto = document.getElementById('menu');
+    texto.style.visibility='visible';
+   
+}
 
-function toggleMenu() {
-    if (open) {
+function AlterarMenu() {
+    
+    if (abrir) {
+       
         document.querySelector('#menu').style.marginLeft = 0;
+        
         return;
     }
-
+   
     document.querySelector('#menu').style.marginLeft = `-${menuSize}`;
 }
 
