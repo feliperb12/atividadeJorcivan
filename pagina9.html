@@ -8,27 +8,39 @@
     <link rel="shortcut icon" type="imagex/png" href="pasta/img/seta.png">
     <title>JavaScript</title>
     <link rel="stylesheet" href="pasta/css/style.css">
-   <script type="text/javascript" src="pasta/js/script.js"></script>
+   
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--HEADER ORIGEM -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
+<script >
 $(function () {
     $("#header").load("header.html");
 });
 </script>
-     
+<script>
+    function myFunction(e) {
+      x = e.clientX;
+      y = e.clientY;
+      coor = "Coordinates: (" + x + "," + y + ")";
+      document.getElementById("demo").innerHTML = coor
+    }
+    
+    function clearCoor() {
+      document.getElementById("demo").innerHTML = "";
+    }
+    </script>
+
 </head>
 
 <body>
     
-<div id="header"></div>
+    <div id="header"></div>
 
         <div id="fundo" class="colun">
             <div class="trocar">
-
+                
                 <h2 align="center">JavaScript</h2>
                 <br>
                 <p> JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas
@@ -56,41 +68,46 @@ $(function () {
 
 
         </div>
-        <div id="fundo" class="botoes">
-            <script>data()
-                hora()</script>
-        </div>
+     
         <div id="fundo" class="horario">
             <div id="MeuHorario" class="meurelogio" onload="hora()">
             </div>
-            <script>
-                hora()
-            </script>
+            <form>
+                <input type="button" id="btn01" value="Desaparece">
+                </form>
+                
+                <p>Clique para desabilitar o botão:</p>
+                
+                <button id="bt" onclick="disableElement()">Disabilitar</button>
+                
+                <script>
+                function disableElement() {
+                  document.getElementById("btn01").disabled = true;
+                }
+                </script>
         </div>
+        <div id="fundo" class="colun">
+        <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
 
-   
+        <p>Passe o mouse sobre o retângulo acima e obtenha as coordenadas do ponteiro do mouse.</p>
+        <p id="demo"></p>
+   </div>
         <p id="demo">Clique para mudar o texto</p>
         <input id="bt" type="button" value="Me diga seu nome" onclick="Alerta()">
         <button id="bt" type="button" onclick='document.getElementById("demo").innerHTML = "Mudou o texto"'>Clica
             aqui para mudar o texto</button>
 
-    <script>
-        exibir()
-        inserir(num)
-        limpar()
-        voltar()
-        calcular()
-        
-    </script>
+           
+
     </div>
+  
+    
+
     <footer class="footer">
         <p>Copyright ©2022 Felipe Ribeiro</p>
     </footer>
 
-    <div class="teste" style="color: red">
-        TESTE
-    </div>
-    <p>asdfsd</p>
+
     
 </body>
 </html>

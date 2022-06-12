@@ -42,27 +42,6 @@ function Alerta(nome) {
 }
 
 
-function inserir(num) {
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
-}
-function limpar() {
-    document.getElementById('resultado').innerHTML = "";
-}
-function voltar() {
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
-}
-function calcular() {
-    var resultado = document.getElementById('resultado').innerHTML;
-    if (resultado) {
-        document.getElementById('resultado').innerHTML = eval(resultado);
-    }
-    else {
-        document.getElementById('resultado').innerHTML = "Nada...";
-    }
-}
-
 function data() {
     var data = new Date();
     var meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
@@ -110,15 +89,6 @@ function mudarCor() {
 
 }
 
-let button = document.querySelector(".bt");
-button.disabled = true;
-function stateHandle() {
-    if (document.querySelector(".bt").value === "") {
-        button.disabled = true;
-    } else {
-        button.disabled = false;
-    }
-}
 
 function voltarCor() {
     var bat = document.getElementById('bt');
