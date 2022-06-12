@@ -10,53 +10,22 @@
     <link rel="stylesheet" href="pasta/css/style.css">
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--HEADER ORIGEM -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script>
+     $(function () {
+         $("#header").load("header.html");
+     });
+ </script>
 </head>
 
-<body class="body">
-
-    <header class="head">
-        <h1>Imagens</h1>  
-   
-    <div class="buscar">
-        <a href="#" class="">Atividades</a>
-        <div id="menu">
-            <a  title="Voltar para casa" href="index.html"> Home</button></a>
-            <a  title="Suplementos" href="pagina2.html"> Academia</button></a>
-            <a  title="Cortes" href="pagina3.html"> Barbearia</button></a>
-            <a  title="GITHUB" href="pagina4.html"> Github</button></a>
-            <a  title="O que é Css?" href="pagina6.html"> Css</button></a>
-            <a  title="Formulario" href="pagina7.html"> Formulário</button></a>
-            <a  title="Imagens em CSS" href="pagina8.html"> Imagens-Css</button></a>
-            <a  title="JavaScript" href="pagina9.html"> JavaScript</button></a>
-
-        </div>
-
-        <!-- Bar icon for navigation -->
-        <a href="javascript:void(0);" class="sinal" 
-                onclick="clicando()">
-
-            <i onclick="f2(this)" 
-                    class="fa fa-plus-circle">
-            </i>
-        </a>
-    </div>
-   
-  
-<script>
-
-    // Function to toggle the bar
-    function clicando() {
-        var x = document.getElementById("menu");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-    </header>
+<body>
+    <div id="header"></div>
+    <h1 align="center">Direito de Imagem</h1>
+    <div class="content">
     <div class="palavras">
-        <h1>Direito de Imagem</h1>
+        
         <p>
             O direito de imagem é protegido pelo artigo 5o, inciso X da Constituição Federal, que o inseriu no rol dos
             direitos e garantias fundamentais, prevendo indenização para o caso de sua violação.
@@ -126,6 +95,7 @@
     </div>
     <div class="centralizar">
     <img class="img" title="Imagens retirada de um site grátis: http://www.freepik.com" src="pasta/img/bit.jpg" alt="some text" ><br>
+</div>
     <footer class="footer"></div>
      
             <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>

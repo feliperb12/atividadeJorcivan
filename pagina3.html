@@ -10,51 +10,22 @@
     <link rel="stylesheet" href="pasta/css/style.css">
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--HEADER ORIGEM -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+   $(function () {
+       $("#header").load("header.html");
+   });
+</script>
 </head>
 
-<body class="body">
-
-    <header class="head">
-        <h1>Barbearia</h1>  
-        <div class="buscar">
-            <a href="#" class="">Atividades</a>
-            <div id="menu">
-                <a title="Home" href="index.html"> Home</button></a>
-                <a title="Academia" href="pagina2.html"> Academia</button></a>
-                <a title="GITHUB" href="pagina4.html"> Github</button></a>
-                <a title="IMAGENS" href="pagina5.html"> Imagens</button></a>
-                <a title="O que é Css?" href="pagina6.html"> Css</button></a>
-                <a title="Formulario" href="pagina7.html"> Formulário</button></a>
-                <a title="Imagens em CSS" href="pagina8.html"> Imagens-Css</button></a>
-                <a title="JavaScript" href="pagina9.html"> JavaScript</button></a>
-  
-            </div>
-  
-            <!-- Bar icon for navigation -->
-            <a href="javascript:void(0);" class="sinal" 
-                    onclick="clicando()">
-  
-                <i onclick="f2(this)" 
-                        class="fa fa-plus-circle">
-                </i>
-            </a>
-        </div>
-       
-      
-    <script>
+<body >
+    <div id="header"></div>
     
-        // Function to toggle the bar
-        function clicando() {
-            var x = document.getElementById("menu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-    </header>
-    <div class="palavras">
+    <h1 align="center">Barbearia</h1>
+    <div class="content">
+        <div class="palavras">
         <h1 style="visibility: visible; animation-name: fadeInLeft;"> Corte De Cabelo Masculino Com Fade e Degradê: Tudo
             Sobre e Inspiração de Cortes</h1>
 
@@ -94,7 +65,7 @@
     <a class="imagens-clique" href="pasta/img/fot3.jpeg"><img class="img" title="Cortes Degradê" src="pasta/img/fot3.jpeg"></a>
     <a class="imagens-clique" href="pasta/img/fot4.jpeg"><img class="img" title="Cortes Degradê" src="pasta/img/fot4.jpeg"></a>
     <a class="imagens-clique" href="pasta/img/fot5.jpeg"><img class="img" title="Cortes Degradê" src="pasta/img/fot5.jpeg"></a>
-    
+</div>
     <footer class="footer">
      
         <p class="copyright">Copyright ©2022 Felipe Ribeiro</p>

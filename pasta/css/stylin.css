@@ -1,10 +1,5 @@
-body {
-  background-color: rgb(150, 150, 150);
-   
-}
-li {
-  font-weight: bold;
-  }
+
+
 
 ul.square {
 list-style-image: url("http://squids.com.br/icons/box.png");/*Trocou a bolinha por uma caixa*/
